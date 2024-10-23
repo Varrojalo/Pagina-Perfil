@@ -161,19 +161,22 @@ p{
 .request-item{
     --width: 4rem;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
     margin-block: 1rem;
+}
+.request-item>p{
+    margin-inline: 1rem;
 }
 .request-profile{
     width: var(--width);
     border: 3px solid var(--accent-color);
     border-radius: 1.25rem;
 }
-.btn-group>button{
-    margin-inline: 0.4rem;
+.btn-group {
+    display: flex;
+    gap: 1rem;
 }
 .btn-circular{
     
